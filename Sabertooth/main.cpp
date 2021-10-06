@@ -78,7 +78,7 @@ int main() {
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	window = glfwCreateWindow(1280, 768, "CGR - GLSL - 03 - Moving Triangle", NULL, NULL);
+	window = glfwCreateWindow(800, 600, "CGR - GLSL - 03 - Moving Triangle", NULL, NULL);
 
 	if (!window) {
 		fprintf(stderr, "ERROR: could not open window with GLFW3\n");
@@ -146,7 +146,7 @@ int main() {
 	//glUseProgram (shader_programme);
 	//glUniformMatrix4fv(matrixLocation, 1, GL_FALSE, matrix);
 
-	glClearColor(0.6f, 0.6f, 0.8f, 1.0f);
+	glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 
 	/* this loop clears the drawing surface, then draws the geometry described by
 	the VAO onto the drawing surface. we 'poll events' to see if the window was
